@@ -1,9 +1,15 @@
 package clinic.programming.training;
 import java.util.List;
 import java.util.ArrayList;
+import org.apache.commons.lang3.StringUtils;
 
 public class Application {
     
+	public int countWords(String words){
+		String[] separateWords = StringUtils.split(words, ' ');
+		return(separateWords == null ? 0 : separateWords.length);
+		
+	}
 	public void greet(){
 		List<String> list = new ArrayList<>();
 		list.add("Hello!");
